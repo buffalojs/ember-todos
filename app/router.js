@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource("todos", { path: '/' }, function() {
+    this.route("complete");
+    this.route("active");
+  });
 });
 
 export default Router;

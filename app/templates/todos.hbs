@@ -1,0 +1,10 @@
+<h3>Todos</h3>
+
+{{#link-to 'todos.index'}}All{{/link-to}}
+{{#link-to 'todos.active'}}Active{{/link-to}}
+{{#link-to 'todos.complete'}}Completed{{/link-to}}
+
+
+{{outlet}}
+
+{{input type="text" value=newTodo insert-newline="createTodo"}}

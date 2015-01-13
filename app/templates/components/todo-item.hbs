@@ -1,0 +1,5 @@
+<li>
+  {{input type="checkbox" checked=todo.isCompleted}}
+  {{todo.title}}
+  <button {{action "destroy" on="doubleClick"}}>x</button>
+</li>
